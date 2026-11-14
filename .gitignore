@@ -1,0 +1,37 @@
+﻿# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Temporary files
+*.log
+*.tmp
+
+# Large trained model (over GitHub's 100 MB file limit)
+models/jobmatch/jobmatch_random_forest.joblib

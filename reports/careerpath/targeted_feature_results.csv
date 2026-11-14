@@ -1,0 +1,6 @@
+Experiment,Features,Accuracy,Balanced_Accuracy,Macro_F1,Weighted_F1
+D_Specialization_Technical_Gained,Specialization + Technical_Skills_Parsed + Skills_Gained_Parsed,0.995,0.9951354908353994,0.995113228464213,0.9949976795023043
+E_All_Four,Education Level + Specialization + Technical_Skills_Parsed + Skills_Gained_Parsed,0.995,0.9951674012124349,0.9950767925395109,0.994996537176829
+C_Education_Technical_Gained,Education Level + Technical_Skills_Parsed + Skills_Gained_Parsed,0.9938888888888889,0.9940036691743859,0.9939472818005174,0.9939035984172128
+B_Education_Specialization_Gained,Education Level + Specialization + Skills_Gained_Parsed,0.975,0.9755019476433523,0.9756465676456396,0.975092232091811
+A_Education_Specialization_Technical,Education Level + Specialization + Technical_Skills_Parsed,0.93,0.9302870356114312,0.9310084997976968,0.9301156196422201

@@ -1,0 +1,34 @@
+,precision,recall,f1-score,support
+Arts / Humanities or a relevant design-oriented vocational pathway,1.0,1.0,1.0,61.0
+B.Com (Accounting and Finance) / BBA Finance,1.0,1.0,1.0,60.0
+B.Com / BBA / B.A. Economics,1.0,1.0,1.0,63.0
+B.Des / BFA / BA in Media and Communication (subject to eligibility),1.0,1.0,1.0,61.0
+B.Ed / M.Ed / postgraduate education specialization (subject to eligibility),0.9830508474576272,0.9666666666666667,0.9747899159663865,60.0
+B.Sc Agriculture / Horticulture / Food Technology (subject to eligibility),1.0,1.0,1.0,57.0
+B.Sc Biotechnology / Microbiology / Life Sciences,1.0,1.0,1.0,66.0
+B.Tech Computer Science and Engineering,1.0,1.0,1.0,60.0
+B.Tech Mechanical / Electrical / Civil Engineering,1.0,1.0,1.0,61.0
+BA Psychology / History / Sociology / Political Science,1.0,1.0,1.0,54.0
+BiPC / relevant vocational or agriculture pathway,1.0,1.0,1.0,59.0
+BiPC → Intermediate (BiPC) → B.Sc Life Sciences / Biotechnology,1.0,1.0,1.0,57.0
+BiPC → Intermediate (BiPC) → Healthcare-related degree pathway,1.0,1.0,1.0,67.0
+CEC / MEC → Intermediate → B.Com / BBA pathway,1.0,1.0,1.0,56.0
+CEC / MEC → Intermediate → B.Com / Finance pathway,1.0,1.0,1.0,62.0
+Choose a suitable stream based on preferred teaching subject → relevant degree,1.0,1.0,1.0,60.0
+HEC / Humanities → Intermediate → BA pathway,1.0,1.0,1.0,57.0
+M.Com / MBA Finance / professional finance qualification pathway,1.0,1.0,1.0,57.0
+M.Des / postgraduate specialization in Design or Media,1.0,1.0,1.0,59.0
+M.Sc / postgraduate specialization in a relevant life-science or healthcare field,0.9855072463768116,0.9714285714285714,0.9784172661870504,70.0
+M.Sc Agriculture / Horticulture / Food Science specialization,0.9838709677419355,1.0,0.991869918699187,61.0
+M.Sc Biotechnology / Microbiology / Life Sciences,0.9836065573770492,0.9836065573770492,0.9836065573770492,61.0
+M.Tech Computer Science / M.S. in Computer Science,1.0,1.0,1.0,62.0
+M.Tech in Engineering Specialization,1.0,1.0,1.0,59.0
+MA in a relevant humanities or social-science specialization,0.9655172413793104,0.9824561403508771,0.9739130434782609,57.0
+MBA / M.Com / postgraduate specialization in Management,1.0,1.0,1.0,54.0
+MBBS / BDS / B.Pharm / B.Sc Nursing (subject to eligibility),1.0,1.0,1.0,63.0
+MPC → Intermediate (MPC) → B.Tech Computer Science and Engineering,1.0,1.0,1.0,62.0
+MPC → Intermediate (MPC) → B.Tech Mechanical/Electrical Engineering,1.0,1.0,1.0,57.0
+Relevant bachelor's degree → teacher-education qualification where required,1.0,1.0,1.0,57.0
+accuracy,0.9966666666666667,0.9966666666666667,0.9966666666666667,0.9966666666666667
+macro avg,0.9967184286777578,0.9968052645274388,0.9967532233902645,1800.0
+weighted avg,0.9966773166026184,0.9966666666666667,0.9966631733944377,1800.0

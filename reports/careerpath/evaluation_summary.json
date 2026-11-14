@@ -1,0 +1,177 @@
+{
+    "project": "SkillPath AI - CareerPath",
+    "model": "Logistic Regression",
+    "dataset_records": 9000,
+    "career_classes": 30,
+    "baseline_test_metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.9968052645274388,
+        "macro_f1": 0.9967532233902645,
+        "weighted_f1": 0.9966631733944377
+    },
+    "cross_validation": {
+        "Accuracy": {
+            "mean": 0.993667,
+            "std": 0.001343
+        },
+        "Balanced_Accuracy": {
+            "mean": 0.993867,
+            "std": 0.001295
+        },
+        "Macro_F1": {
+            "mean": 0.993877,
+            "std": 0.001327
+        }
+    },
+    "individual_feature_experiments": [
+        {
+            "Feature": "Technical_Skills_Parsed",
+            "Feature_Type": "text",
+            "Accuracy": 0.6222222222222222,
+            "Balanced_Accuracy": 0.6217877475294249,
+            "Macro_F1": 0.6241849435999114,
+            "Weighted_F1": 0.6238713251327762
+        },
+        {
+            "Feature": "Skills_Gained_Parsed",
+            "Feature_Type": "text",
+            "Accuracy": 0.6038888888888889,
+            "Balanced_Accuracy": 0.6028070040048346,
+            "Macro_F1": 0.6063745017054323,
+            "Weighted_F1": 0.6064981872742279
+        },
+        {
+            "Feature": "Specialization",
+            "Feature_Type": "categorical",
+            "Accuracy": 0.22833333333333333,
+            "Balanced_Accuracy": 0.21927777557257971,
+            "Macro_F1": 0.14471525441659872,
+            "Weighted_F1": 0.14638724172950132
+        },
+        {
+            "Feature": "Soft_Skills_Parsed",
+            "Feature_Type": "text",
+            "Accuracy": 0.10388888888888889,
+            "Balanced_Accuracy": 0.1019798193649922,
+            "Macro_F1": 0.10548922022534873,
+            "Weighted_F1": 0.10709694624849216
+        },
+        {
+            "Feature": "Education Level",
+            "Feature_Type": "categorical",
+            "Accuracy": 0.10777777777777778,
+            "Balanced_Accuracy": 0.0989617957579771,
+            "Macro_F1": 0.036316614069437224,
+            "Weighted_F1": 0.03876779629260887
+        },
+        {
+            "Feature": "Certifications",
+            "Feature_Type": "categorical",
+            "Accuracy": 0.0961111111111111,
+            "Balanced_Accuracy": 0.08771870408149972,
+            "Macro_F1": 0.03326132305726883,
+            "Weighted_F1": 0.03601994001649775
+        },
+        {
+            "Feature": "Score_Value",
+            "Feature_Type": "numeric",
+            "Accuracy": 0.08,
+            "Balanced_Accuracy": 0.07065010269071928,
+            "Macro_F1": 0.01656118787623674,
+            "Weighted_F1": 0.018551296144423697
+        },
+        {
+            "Feature": "Score_Type",
+            "Feature_Type": "categorical",
+            "Accuracy": 0.07611111111111112,
+            "Balanced_Accuracy": 0.06666666666666667,
+            "Macro_F1": 0.01049056218512803,
+            "Weighted_F1": 0.012062719813193961
+        }
+    ],
+    "feature_ablation_experiments": [
+        {
+            "Experiment": "A_Education_Specialization",
+            "Feature_Count": 2,
+            "Accuracy": 0.21666666666666667,
+            "Balanced_Accuracy": 0.20990677346391529,
+            "Macro_F1": 0.14841473277524858,
+            "Weighted_F1": 0.14974987970001846
+        },
+        {
+            "Experiment": "B_Education_Score",
+            "Feature_Count": 4,
+            "Accuracy": 0.22166666666666668,
+            "Balanced_Accuracy": 0.2159327991279812,
+            "Macro_F1": 0.17447364960227774,
+            "Weighted_F1": 0.17573954210384002
+        },
+        {
+            "Experiment": "C_Skills_Only",
+            "Feature_Count": 3,
+            "Accuracy": 0.6644444444444444,
+            "Balanced_Accuracy": 0.663793373890913,
+            "Macro_F1": 0.6670440593079775,
+            "Weighted_F1": 0.6674521236096168
+        },
+        {
+            "Experiment": "D_All_Features",
+            "Feature_Count": 8,
+            "Accuracy": 0.9966666666666667,
+            "Balanced_Accuracy": 0.9968052645274388,
+            "Macro_F1": 0.9967532233902645,
+            "Weighted_F1": 0.9966631733944377
+        }
+    ],
+    "feature_novelty_experiments": [
+        {
+            "Group": "Unseen technical skill values",
+            "Unseen_Records": 485,
+            "Accuracy": 0.9876288659793815,
+            "Balanced_Accuracy": 0.9935656750425211,
+            "Macro_F1": 0.9933670793869747
+        },
+        {
+            "Group": "Unseen skills gained values",
+            "Unseen_Records": 425,
+            "Accuracy": 0.9952941176470588,
+            "Balanced_Accuracy": 0.9962454212454213,
+            "Macro_F1": 0.996427265303541
+        },
+        {
+            "Group": "Unseen technical + gained pairs",
+            "Unseen_Records": 1571,
+            "Accuracy": 0.9949077021005729,
+            "Balanced_Accuracy": 0.9956085548973689,
+            "Macro_F1": 0.9956111031295428
+        },
+        {
+            "Group": "Unseen specialization + skill combinations",
+            "Unseen_Records": 1682,
+            "Accuracy": 0.9946492271105827,
+            "Balanced_Accuracy": 0.995068031521798,
+            "Macro_F1": 0.9950321094814922
+        }
+    ],
+    "sanity_check_experiments": [
+        {
+            "Experiment": "Original labels",
+            "Accuracy": 0.995,
+            "Balanced_Accuracy": 0.9951,
+            "Macro_F1": 0.9951
+        },
+        {
+            "Experiment": "Shuffled training labels",
+            "Accuracy": 0.0172,
+            "Balanced_Accuracy": 0.0171,
+            "Macro_F1": 0.0183
+        },
+        {
+            "Experiment": "Majority-class baseline",
+            "Accuracy": 0.0389,
+            "Balanced_Accuracy": 0.0333,
+            "Macro_F1": 0.0025
+        }
+    ],
+    "evaluation_limitation": "All experiments use the same supplied dataset. High scores do not establish real-world career recommendation validity. Independent validation with real student outcomes is required."
+}

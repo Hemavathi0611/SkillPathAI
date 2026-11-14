@@ -1,0 +1,14 @@
+Experiment,Records,Accuracy,Balanced_Accuracy,Macro_F1,Notes
+Baseline Logistic Regression,1800,0.9966666666666667,0.9968052645274388,0.9967532233902645,Original 80:20 stratified test split
+Feature Ablation: A_Education_Specialization,1800,0.21666666666666667,0.20990677346391529,0.14841473277524858,Features used: 2
+Feature Ablation: B_Education_Score,1800,0.22166666666666668,0.2159327991279812,0.17447364960227774,Features used: 4
+Feature Ablation: C_Skills_Only,1800,0.6644444444444444,0.663793373890913,0.6670440593079775,Features used: 3
+Feature Ablation: D_All_Features,1800,0.9966666666666667,0.9968052645274388,0.9967532233902645,Features used: 8
+Sanity Check: Original labels,1800,0.995,0.9951,0.9951,Comparison against original-label model
+Sanity Check: Shuffled training labels,1800,0.0172,0.0171,0.0183,Comparison against original-label model
+Sanity Check: Majority-class baseline,1800,0.0389,0.0333,0.0025,Comparison against original-label model
+Feature Novelty: Unseen technical skill values,485,0.9876288659793815,0.9935656750425211,0.9933670793869747,Evaluation on unseen feature values/combinations
+Feature Novelty: Unseen skills gained values,425,0.9952941176470588,0.9962454212454213,0.996427265303541,Evaluation on unseen feature values/combinations
+Feature Novelty: Unseen technical + gained pairs,1571,0.9949077021005729,0.9956085548973689,0.9956111031295428,Evaluation on unseen feature values/combinations
+Feature Novelty: Unseen specialization + skill combinations,1682,0.9946492271105827,0.995068031521798,0.9950321094814922,Evaluation on unseen feature values/combinations
+5-Fold Cross-Validation Mean,9000,0.993667,0.993867,0.993877,Standard deviation: 0.001343

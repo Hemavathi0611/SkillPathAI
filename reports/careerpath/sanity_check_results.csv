@@ -1,0 +1,4 @@
+Experiment,Accuracy,Balanced_Accuracy,Macro_F1
+Original labels,0.995,0.9951,0.9951
+Shuffled training labels,0.0172,0.0171,0.0183
+Majority-class baseline,0.0389,0.0333,0.0025
