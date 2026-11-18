@@ -35,3 +35,6 @@ Thumbs.db
 
 # Large trained model (over GitHub's 100 MB file limit)
 models/jobmatch/jobmatch_random_forest.joblib
+
+# Local backup files
+frontend/app_backup.py
